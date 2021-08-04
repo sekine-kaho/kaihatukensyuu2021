@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>第二回課題、フォーム部品練習</title>
+  </head>
+
+  <body>
+    <h1>個人情報登録</h1>
+    <table>
+
+        <form method='get' action='receive.php'>
+        <tr>
+            <td>名前:<input type="text" name="name"/
+        </tr>
+
+
+        <tr>
+            <td>年齢:<input type="text" name="age" /
+        </tr>
+
+        <tr>
+           <td>習い事:<input type="checkbox" name="number[]" value="書道" />書道
+           <input type="checkbox" name="number[]" value="水泳" />水泳
+           <input type="checkbox" name="number[]" value="ピアノ" />ピアノ
+           <input type="checkbox" name="number[]" value="ヨガ" />ヨガ
+       </tr>
+
+        <tr>
+            <td>性別:<input type="radio" name="radio" value="女性" checked="checked" />女性
+                  　 <input type="radio" name="radio" value="男性" />男性</td>
+        <tr/>
+
+
+        <tr>
+            <td>住所:<input type="text" name="address" /></td>
+        </tr>
+
+
+        <tr>
+            <td>職種:<input type="text" name="job" /></td>
+        </tr>
+
+
+        <tr>
+            <td>勤務地:
+                <select name="kinnmuti">
+                    <option value="福島" selected="selected">福島</option>
+                    <option value="東京">東京</option>
+                    <option value="大阪">大阪</option>
+                </select>
+            <th>
+        </tr>
+
+
+        <tr>
+             <th><br>コメント:<textarea name="kansou" rows="5" cols="40"></textarea></td></th>
+        </tr>
+
+
+        <tr>
+            <th><br><input type="submit" value="送信">
+                    <input type="reset" value="リセット">
+        </th>
+
+    </table>
+
+
+    </body>
+ </html>
