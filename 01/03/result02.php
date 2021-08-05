@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>login</title>
+    </head>
+
+
 <?php
   $gold_pw = "222";
   $gold_id = "se";
@@ -11,7 +20,7 @@
   }elseif($_POST['id'] == $reg_id AND $_POST['password'] == $reg_pw){
     echo "ノーマル会員！！";
   }else{
-    echo "ログイン失敗";
+    echo "ログイン失敗、、、";
   }
 
 ?>
