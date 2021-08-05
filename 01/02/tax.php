@@ -17,7 +17,7 @@
                 <th>個数</th>
                 <th>税率</th>
             </tr>
-            
+
             <tr>
                        <td><input type="text" name="shohin1" size="20" maxlength="20" /></td>
                        <td><input type="text" name="cost1" size="20" maxlength="20" /></td>
@@ -67,7 +67,7 @@
                            <input type="radio" name="zei5" value="10" />10%
                        </td>
             </tr>
-                      <td colspan="4" style="text-align:left;"><input type="submit" value="送信"><input type="reset" value="リセット"></td>
+                      <td><colspan="4" style="text-align:left;"><input type="submit" value="送信"><input type="reset" value="リセット"></td>
                       <br></br>
                       <br></br>
         </table>
@@ -94,7 +94,7 @@
                                   $cost_1 = $cost_1 * $kazu * (1 + ($zei / 100));
                                   echo $cost_1 . "円（税込み）";
                               ?>
-                          <td>
+                          </td>
             </tr>
 
             <tr>
@@ -110,7 +110,7 @@
                                   $cost_2 = $cost_2 * $kazu * (1 + ($zei / 100));
                                   echo $cost_2 . "円（税込み）";
                               ?>
-                          <td>
+                          </td>
             </tr>
 
             <tr>
@@ -126,7 +126,7 @@
                                   $cost_3 = $cost_3 * $kazu * (1 + ($zei / 100));
                                   echo $cost_3 . "円（税込み）";
                               ?>
-                          <td>
+                          </td>
             </tr>
 
             <tr>
@@ -142,7 +142,7 @@
                                   $cost_4 = $cost_4 * $kazu * (1 + ($zei / 100));
                                   echo $cost_4 . "円（税込み）";
                               ?>
-                          <td>
+                          </td>
             </tr>
 
             <tr>
@@ -158,21 +158,21 @@
                                   $cost_5 = $cost_5 * $kazu * (1 + ($zei / 100));
                                   echo $cost_5 . "円（税込み）";
                               ?>
-                          <td>
+                          </td>
             </tr>
 
 
 
             <tr>
-               <td colspan="4" style="text-align:left;">合計</td>
-               <td><?php echo $cost_sum;?></td>
-               <td> <?php>$cost_sum = $cost1 + $cost2 + $cost3 + $cost4 + $cost5;?></td>
+                <td colspan="5" style="text-align:left;">合計</td>
+                <td>
+                    <?php
+                        echo $cost = $cost_1 + $cost_2 + $cost_3 + $cost_4  + $cost_5 . "円（税込み）";
+                    ?>
+                </td>
            </tr>
-        <table>
+
+       </table>
 
     </body>
 </html>
-
-
-</html>
-</head>
